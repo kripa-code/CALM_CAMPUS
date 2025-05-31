@@ -23,6 +23,10 @@
         <source src="https://kshemavana.com/wp-content/themes/kshemavana/assets/images/home/banner-vidd.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+      <audio id="bg-audio" autoplay loop>
+        <source src="icelandic-midsommar-nature-ambience-ftus-1-02-05.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
         <nav class="navbar">
           <div class="logo">
             <a href="index.html"> <img src="calm_campus_logo-removebg-preview.png" alt=""> </a>
@@ -134,6 +138,29 @@
         </div>
       </footer>
     </div>
+        <script>
+      const bgAudio = document.getElementById("bg-audio");
+      const audioToggleBtn = document.getElementById("audioToggleBtn");
+    
+      function toggleAudio() {
+        if (bgAudio.paused) {
+          bgAudio.play();
+          audioToggleBtn.textContent = "🔊";
+        } else {
+          bgAudio.pause();
+          audioToggleBtn.textContent = "🔇";
+        }
+      }
+    
+      // Optional: change icon based on whether autoplay succeeded
+      document.addEventListener("DOMContentLoaded", () => {
+        if (!bgAudio.paused) {
+          audioToggleBtn.textContent = "🔊";
+        }
+      });
+    </script>
+
+    
    <!-- JavaScript for basic interactions -->
     <script>
       // Toggle mobile navigation
