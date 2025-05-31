@@ -1,5 +1,5 @@
 
-# 🌿 Campus Calm – Student Mental Well-being Platform
+# 🌿 Calm Campus – Student Mental Well-being Platform
 
 Welcome to **Campus Calm**, a responsive, student-friendly web platform designed to support mental health and emotional well-being. This project offers students easy access to various wellness services like therapy, meditation, academic stress counseling, and more.
 
